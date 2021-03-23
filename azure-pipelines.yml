@@ -14,4 +14,4 @@ steps:
   inputs:
     solution: Project.proj
     msbuildArguments: >
-        /p:BuildNumber=$(Build.counter)
+        /p:BuildNumber=$(counter)
