@@ -1,0 +1,12 @@
+# Starter pipeline
+
+trigger:
+- main
+
+pool:
+  vmImage: windows-2019
+
+steps:
+- task: MSBuild@1
+  inputs:
+    solution: Project.proj
