@@ -9,6 +9,6 @@
   </PropertyGroup>
 
   <Target Name="Build">
-    <Message Text="Build version $(Version)" />
+    <Message Text="Build version $(Version) from $(BranchName)" />
   </Target>
 </Project>
