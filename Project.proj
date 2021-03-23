@@ -1,6 +1,11 @@
 <Project>
   <PropertyGroup>
-    <Version>1.0.0</Version>
+    <MajorVersion>1.0</MajorVersion>
+    <BuildNumber>0</BuildNumber>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>$(MajorVersion).$(BuildNumber)</Version>
   </PropertyGroup>
 
   <Target Name="Build">

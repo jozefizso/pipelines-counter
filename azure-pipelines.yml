@@ -6,7 +6,12 @@ trigger:
 pool:
   vmImage: windows-2019
 
+variables:
+  BuildNumber: $[counter('BuildNumber', 100)]
+
 steps:
 - task: MSBuild@1
   inputs:
     solution: Project.proj
+    msbuildArguments: >
+        /p:BuildNumber=$(Build.BuildNumber)
